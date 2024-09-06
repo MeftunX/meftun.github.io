@@ -12,13 +12,23 @@
 </body>
    <header x-data="{ menuitems: [
       { href: '#slider', title: 'ANASAYFA' },
-      { href: '#slider', title: 'ANASAYFA' },
-      ]}">
-<div class="container"></div>
+      { href: '#about', title: 'MEFT CAFE' },
+      { href: '#menu', title: 'MENÜ' },
+      { href: '#hakkimizda', title: 'HAKKIMIZDA' },
+
+      ]}" class="absolute z-50 top-0 w-full">
+<div class="container mx-auto py-4 flex flex-row items-center">
 <a href="">
-   <img src="./images/espressolab.png" alt="">
+   <img src="./images/espressolab.png" alt="Meft Cafe" class="lg:w-[170px]">
 </a>
-<nav></nav>
+<nav class="items-center justify-center gap-6 pl-6 ml-6 border-l border-gray-200 test-base">
+   <template x-for="(menuitem, index) in menuitems" :key="index">
+      <a x-bind:href="menuitem.href" x-test="menuitem.title" class="font-medium text-white hover:underline"></a>
+   </template>
+</nav>
+<div>
+   <a href="">REZERVASYON</a>
+</div>
    </header>
 </body>
 </html>
