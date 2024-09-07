@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,7 @@
 </a>
 <nav class="flex items-center justify-center gap-6 pl-6 ml-6 border-1 border-gray-200 test-base">
    <template x-for="(menuitem, index) in menuitems" :key="index">
-      <a x-bind:href="menuitem.href" x-test="menuitems.title" class="font-medium text-white hover:underline"></a>
+      <a x-bind:href="menuitem.href" x-test="menuitem.title" class="font-medium text-white hover:underline"></a>
    </template>
 </nav>
 <div>
