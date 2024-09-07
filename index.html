@@ -22,7 +22,7 @@
 </a>
 <nav class="flex items-center justify-center gap-6 pl-6 ml-6 border-1 border-gray-200 test-base">
    <template x-for="(menuitem, index) in menuitems" :key="index">
-      <a x-bind:href="menuitem.href" x-test="menuitem.title" class="font-medium text-white hover:underline"></a>
+      <a x-bind:href="menuitem.href" x-text="menuitem.title" class="font-medium text-white hover:underline"></a>
    </template>
 </nav>
 <div>
